@@ -1,0 +1,36 @@
+<!--Exercise 2-->
+
+<!DOCTYPE html>
+<html lang ="eng">
+<head>	
+   <title>Fahrenheit to Celsius</title>
+   <script type="text/javascript">
+      while(3){
+          var temp = prompt("Enter Fahrenheit temperature, value between -100 and 212.\nEnter 999 to stop.")
+           if (temp == 999){
+               break;
+           }
+          
+          if(temp<=-100 ||temp>=212){
+              alert("You entered "+temp+".\nEntry range must be from -100 to +212.");           
+          }
+          
+          else{
+              var fahrenheit = temp
+              temp  = parseInt(temp)
+              temp -= 32
+              temp *= (5/9)
+              alert("Fahrenheit temperature is "+fahrenheit+"\nCelsium temperature is "+temp);
+          }
+      }
+                                                 
+   </script>
+</head>
+    
+<body>
+    <main>
+        <h1>Thanks for using the temperature converter</h1>
+    </main>
+</body>
+    
+</html>
